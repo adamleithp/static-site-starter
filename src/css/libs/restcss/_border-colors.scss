@@ -1,0 +1,36 @@
+// Backgroun colours
+
+.border-black       {border-color: $black}
+.border-darkgray    {border-color: $darkgray}
+.border-gray        {border-color: $gray}
+.border-silver      {border-color: $silver}
+.border-white       {border-color: $white}
+.border-offwhite    {border-color: $offwhite}
+.border-aqua        {border-color: $aqua}
+.border-blue        {border-color: $blue}
+.border-navy        {border-color: $navy}
+.border-teal        {border-color: $teal}
+.border-green       {border-color: $green}
+.border-olive       {border-color: $olive}
+.border-lime        {border-color: $lime}
+.border-yellow      {border-color: $yellow}
+.border-orange      {border-color: $orange}
+.border-red         {border-color: $red}
+.border-fuchsia     {border-color: $fuchsia}
+.border-purple      {border-color: $purple}
+.border-maroon      {border-color: $maroon}
+
+// Gray Spectrum
+.border-gray0       {background-color: lighten($gray, 50)}
+.border-gray1       {border-color: lighten($gray, 40)}
+.border-gray2       {border-color: lighten($gray, 30)}
+.border-gray3       {border-color: lighten($gray, 20)}
+.border-gray4       {border-color: lighten($gray, 10)}
+
+.border-gray5       {border-color: $gray}
+
+.border-gray6       {border-color: darken($gray, 10)}
+.border-gray7       {border-color: darken($gray, 20)}
+.border-gray8       {border-color: darken($gray, 30)}
+.border-gray9       {border-color: darken($gray, 40)}
+.border-gray10      {border-color: darken($gray, 50)}

@@ -1,0 +1,86 @@
+// Widths
+
+.mxw-1              {max-width: 1em}
+.mxw-1p5            {max-width: 1.5em}
+.mxw-2              {max-width: 2em}
+.mxw-3              {max-width: 3em}
+.mxw-3p5            {max-width: 3.5em}
+.mxw-4              {max-width: 4em}
+.mxw-5              {max-width: 5em}
+.mxw-10             {max-width: 10em}
+.mxw-11             {max-width: 11em}
+.mxw-12             {max-width: 12em}
+.mxw-13             {max-width: 13em}
+.mxw-14             {max-width: 14em}
+.mxw-15             {max-width: 15em}
+
+.mxw-20             {max-width: 20em}
+.mxw-30             {max-width: 30em}
+.mxw-40             {max-width: 40em}
+.mxw-50             {max-width: 50em}
+.mxw-60             {max-width: 60em}
+.mxw-70             {max-width: 70em}
+.mxw-80             {max-width: 80em}
+.mxw-90             {max-width: 90em}
+.mxw-100            {max-width: 100em}
+
+@media #{$breakpoint-sm} {
+  .sm-mxw-none      {max-width: none}
+  .sm-mxw-1         {max-width: 1em}
+  .sm-mxw-1p5       {max-width: 1.5em}
+  .sm-mxw-2         {max-width: 2em}
+  .sm-mxw-3p5       {max-width: 3.5em}
+  .sm-mxw-3         {max-width: 3em}
+  .sm-mxw-4         {max-width: 4em}
+  .sm-mxw-5         {max-width: 5em}
+  .sm-mxw-10        {max-width: 10em}
+  .sm-mxw-20        {max-width: 20em}
+  .sm-mxw-30        {max-width: 30em}
+  .sm-mxw-40        {max-width: 40em}
+  .sm-mxw-50        {max-width: 50em}
+  .sm-mxw-60        {max-width: 60em}
+  .sm-mxw-70        {max-width: 70em}
+  .sm-mxw-80        {max-width: 80em}
+  .sm-mxw-90        {max-width: 90em}
+  .sm-mxw-100       {max-width: 100em}
+}
+@media #{$breakpoint-md} {
+  .md-mxw-none      {max-width: none}
+  .md-mxw-1         {max-width: 1em}
+  .md-mxw-1p5       {max-width: 1.5em}
+  .md-mxw-2         {max-width: 2em}
+  .md-mxw-3         {max-width: 3em}
+  .md-mxw-3p5       {max-width: 3.5em}
+  .md-mxw-4         {max-width: 4em}
+  .md-mxw-5         {max-width: 5em}
+  .md-mxw-10        {max-width: 10em}
+  .md-mxw-20        {max-width: 20em}
+  .md-mxw-30        {max-width: 30em}
+  .md-mxw-40        {max-width: 40em}
+  .md-mxw-50        {max-width: 50em}
+  .md-mxw-60        {max-width: 60em}
+  .md-mxw-70        {max-width: 70em}
+  .md-mxw-80        {max-width: 80em}
+  .md-mxw-90        {max-width: 90em}
+  .md-mxw-100       {max-width: 100em}
+}
+@media #{$breakpoint-lg} {
+  .lg-mxw-none      {max-width: none}
+  .lg-mxw-1         {max-width: 1em}
+  .lg-mxw-1p5       {max-width: 1.5em}
+  .lg-mxw-2         {max-width: 2em}
+  .lg-mxw-3         {max-width: 3em}
+  .lg-mxw-3p5       {max-width: 3.5em}
+  .lg-mxw-4         {max-width: 4em}
+  .lg-mxw-5         {max-width: 5em}
+  .lg-mxw-10        {max-width: 10em}
+  .lg-mxw-20        {max-width: 20em}
+  .lg-mxw-30        {max-width: 30em}
+  .lg-mxw-40        {max-width: 40em}
+  .lg-mxw-50        {max-width: 50em}
+  .lg-mxw-60        {max-width: 60em}
+  .lg-mxw-70        {max-width: 70em}
+  .lg-mxw-80        {max-width: 80em}
+  .lg-mxw-90        {max-width: 90em}
+  .lg-mxw-100       {max-width: 100em}
+}

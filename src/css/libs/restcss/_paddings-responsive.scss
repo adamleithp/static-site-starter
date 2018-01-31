@@ -1,0 +1,213 @@
+// Padding Responsive
+
+$padding-step-start: 1;
+$padding-step-limit: 6;
+$padding-step-axis-limit: 6;
+
+// responsive paddings
+@media #{$breakpoint-sm} {
+  // paddings
+  .sm-p0       {padding: 0}
+  .sm-pp5      {padding: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .sm-p#{$i} {padding: #{$i}em}
+  }
+
+  // padding-tops
+  .sm-pt0       {padding-top: 0}
+  .sm-ptp5      {padding-top: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .sm-pt#{$i} {padding-top: #{$i}em}
+  }
+
+  // padding-rights
+  .sm-pr0       {padding-right: 0}
+  .sm-prp5      {padding-right: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .sm-pr#{$i} {padding-right: #{$i}em}
+  }
+
+  // padding-bottoms
+  .sm-pb0       {padding-bottom: 0}
+  .sm-pbp5      {padding-bottom: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .sm-pb#{$i} {padding-bottom: #{$i}em}
+  }
+
+  // padding-lefts
+  .sm-pl0       {padding-left: 0}
+  .sm-plp5      {padding-left: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .sm-pl#{$i} {padding-left: #{$i}em}
+  }
+
+  // padding axis X
+  .sm-px0       {padding-right: 0; padding-left: 0;}
+  .sm-pxp5      {padding-right: .5em; padding-left: .5em}
+  @for $i from $padding-step-start through $padding-step-axis-limit {
+    .sm-px#{$i}    {padding-right: #{$i}em; padding-left: #{$i}em}
+  }
+
+  // padding axis Y
+  .sm-py0       {padding-top: 0; padding-bottom: 0}
+  .sm-pyp5      {padding-top: .5em; padding-bottom: .5em}
+  @for $i from $padding-step-start through $padding-step-axis-limit {
+    .sm-py#{$i}    {padding-top: #{$i}em; padding-bottom: #{$i}em}
+  }
+}
+
+
+@media #{$breakpoint-md} {
+  // paddings
+  .md-p0        {padding: 0}
+  .md-pp5       {padding: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .md-p#{$i}  {padding: #{$i}em}
+  }
+
+  // padding-tops
+  .md-pt0       {padding-top: 0}
+  .md-ptp5      {padding-top: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .md-pt#{$i} {padding-top: #{$i}em}
+  }
+
+  // padding-rights
+  .md-pr0       {padding-right: 0}
+  .md-prp5      {padding-right: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .md-pr#{$i} {padding-right: #{$i}em}
+  }
+
+  // padding-bottoms
+  .md-pb0       {padding-bottom: 0}
+  .md-pbp5      {padding-bottom: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .md-pb#{$i} {padding-bottom: #{$i}em}
+  }
+
+  // padding-lefts
+  .md-pl0       {padding-left: 0}
+  .md-plp5      {padding-left: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .md-pl#{$i} {padding-left: #{$i}em}
+  }
+
+  // padding axis X
+  .md-px0       {padding-right: 0; padding-left: 0;}
+  .md-pxp5      {padding-right: .5em; padding-left: .5em}
+  @for $i from $padding-step-start through $padding-step-axis-limit {
+    .md-px#{$i} {padding-right: #{$i}em; padding-left: #{$i}em}
+  }
+
+  // padding axis Y
+  .md-py0       {padding-top: 0; padding-bottom: 0}
+  .md-pyp5      {padding-top: .5em; padding-bottom: .5em}
+  @for $i from $padding-step-start through $padding-step-axis-limit {
+    .md-py#{$i} {padding-top: #{$i}em; padding-bottom: #{$i}em}
+  }
+}
+
+
+@media #{$breakpoint-lg} {
+  // paddings
+  .lg-p0        {padding: 0}
+  .lg-pp5       {padding: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .lg-p#{$i}  {padding: #{$i}em}
+  }
+
+  // padding-tops
+  .lg-pt0       {padding-top: 0}
+  .lg-ptp5      {padding-top: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .lg-pt#{$i} {padding-top: #{$i}em}
+  }
+
+  // padding-rights
+  .lg-pr0       {padding-right: 0}
+  .lg-prp5      {padding-right: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .lg-pr#{$i} {padding-right: #{$i}em}
+  }
+
+  // padding-bottoms
+  .lg-pb0       {padding-bottom: 0}
+  .lg-pbp5      {padding-bottom: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .lg-pb#{$i} {padding-bottom: #{$i}em}
+  }
+
+  // padding-lefts
+  .lg-pl0       {padding-left: 0}
+  .lg-plp5      {padding-left: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .lg-pl#{$i} {padding-left: #{$i}em}
+  }
+
+  // padding axis X
+  .lg-px0       {padding-right: 0; padding-left: 0}
+  .lg-pxp5      {padding-right: .5em; padding-left: .5em}
+  @for $i from $padding-step-start through $padding-step-axis-limit{
+    .lg-px#{$i} {padding-right: #{$i}em; padding-left: #{$i}em}
+  }
+
+  // padding axis Y
+  .lg-py0       {padding-top: 0; padding-bottom: 0}
+  .lg-pyp5      {padding-top: .5em; padding-bottom: .5em}
+  @for $i from $padding-step-start through $padding-step-axis-limit {
+    .lg-py#{$i} {padding-top: #{$i}em; padding-bottom: #{$i}em}
+  }
+}
+
+
+@media #{$breakpoint-xl} {
+  // paddings
+  .xl-p0        {padding: 0}
+  .xl-pp5       {padding: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .xl-p#{$i}  {padding: #{$i}em}
+  }
+
+  // padding-tops
+  .xl-pt0       {padding-top: 0}
+  .xl-ptp5      {padding-top: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .xl-pt#{$i} {padding-top: #{$i}em}
+  }
+
+  // padding-rights
+  .xl-pr0       {padding-right: 0}
+  .xl-prp5      {padding-right: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .xl-pr#{$i} {padding-right: #{$i}em}
+  }
+
+  // padding-bottoms
+  .xl-pb0       {padding-bottom: 0}
+  .xl-pbp5      {padding-bottom: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .xl-pb#{$i} {padding-bottom: #{$i}em}
+  }
+
+  // padding-lefts
+  .xl-pl0       {padding-left: 0}
+  .xl-plp5      {padding-left: .5em}
+  @for $i from $padding-step-start through $padding-step-limit {
+    .xl-pl#{$i} {padding-left: #{$i}em}
+  }
+
+  // padding axis X
+  .xl-px0       {padding-right: 0; padding-left: 0}
+  .xl-pxp5      {padding-right: .5em; padding-left: .5em}
+  @for $i from $padding-step-start through $padding-step-axis-limit{
+    .xl-px#{$i} {padding-right: #{$i}em; padding-left: #{$i}em}
+  }
+
+  // padding axis Y
+  .xl-py0       {padding-top: 0; padding-bottom: 0}
+  .xl-pyp5      {padding-top: .5em; padding-bottom: .5em}
+  @for $i from $padding-step-start through $padding-step-axis-limit {
+    .xl-py#{$i} {padding-top: #{$i}em; padding-bottom: #{$i}em}
+  }
+}

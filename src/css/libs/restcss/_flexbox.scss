@@ -1,0 +1,82 @@
+// Flex Box
+
+.flex               {display: flex}
+.flex-1 {
+  flex:1;
+}
+.flex-column        {flex-direction: column}
+.flex-wrap          {flex-wrap: wrap}
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0; /* 1 */
+  min-height: 0; /* 1 */
+}
+.flex-none          {flex: none}
+
+// Self (added to display flex div)
+.self-start         {align-self: flex-start}
+.self-end           {align-self: flex-end}
+.self-center        {align-self: center}
+.self-baseline      {align-self: baseline}
+.self-stretch       {align-self: stretch}
+
+// Items (add to children of display flex div)
+.items-start        {align-items: flex-start}
+.items-end          {align-items: flex-end}
+.items-center       {align-items: center}
+.items-baseline     {align-items: baseline}
+.items-stretch      {align-items: stretch}
+
+.content-start      {align-content: flex-start}
+.content-end        {align-content: flex-end}
+.content-center     {align-content: center}
+.content-between    {align-content: space-between}
+.content-around     {align-content: space-around}
+.content-stretch    {align-content: stretch}
+
+.justify-start      {justify-content: flex-start}
+.justify-end        {justify-content: flex-end}
+.justify-center     {justify-content: center}
+.justify-between    {justify-content: space-between}
+.justify-around     {justify-content: space-around}
+
+// Order
+.order-n1           {order: -1}
+.order-0            {order: 0}
+.order-1            {order: 1}
+.order-2            {order: 2}
+.order-3            {order: 3}
+
+@media #{$breakpoint-sm} {
+  .sm-flex          {display: flex}
+  .sm-flex-row      {flex-direction: row}
+  .sm-flex-column   {flex-direction: column}
+
+  .sm-order-n1      {order: -1}
+  .sm-order-0       {order: 0}
+  .sm-order-1       {order: 1}
+  .sm-order-2       {order: 2}
+  .sm-order-3       {order: 3}
+}
+@media #{$breakpoint-md} {
+  .md-flex          {display: flex}
+  .md-flex-row      {flex-direction: row}
+  .md-flex-column   {flex-direction: column}
+
+  .md-order-n1      {order: -1}
+  .md-order-0       {order: 0}
+  .md-order-1       {order: 1}
+  .md-order-2       {order: 2}
+  .md-order-3       {order: 3}
+}
+@media #{$breakpoint-lg} {
+  .lg-flex          {display: flex}
+  .lg-flex-row      {flex-direction: row}
+  .lg-flex-column   {flex-direction: column}
+
+  .lg-order-n1      {order: -1}
+  .lg-order-0       {order: 0}
+  .lg-order-1       {order: 1}
+  .lg-order-2       {order: 2}
+  .lg-order-3       {order: 3}
+}

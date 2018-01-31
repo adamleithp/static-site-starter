@@ -1,0 +1,80 @@
+// Grid
+
+.offset-col-1            {margin-left: (1/12 * 100%)}
+.offset-col-2            {margin-left: (2/12 * 100%)}
+.offset-col-2p5          {margin-left: (2.40/12 * 100%)} // 1/5th
+.offset-col-3            {margin-left: (3/12 * 100%)}
+.offset-col-4            {margin-left: (4/12 * 100%)}
+.offset-col-5            {margin-left: (5/12 * 100%)}
+.offset-col-6            {margin-left: (6/12 * 100%)}
+.offset-col-7            {margin-left: (7/12 * 100%)}
+.offset-col-8            {margin-left: (8/12 * 100%)}
+.offset-col-9            {margin-left: (9/12 * 100%)}
+.offset-col-10           {margin-left: (10/12 * 100%)}
+.offset-col-11           {margin-left: (11/12 * 100%)}
+.offset-col-12           {margin-left: (12/12 * 100%)}
+
+@media #{$breakpoint-sm} {
+  .sm-offset-col-1       {margin-left: (1/12 * 100%)}
+  .sm-offset-col-2       {margin-left: (2/12 * 100%)}
+  .sm-offset-col-2p5     {margin-left: (2.40/12 * 100%)} // 1/5th
+  .sm-offset-col-3       {margin-left: (3/12 * 100%)}
+  .sm-offset-col-4       {margin-left: (4/12 * 100%)}
+  .sm-offset-col-5       {margin-left: (5/12 * 100%)}
+  .sm-offset-col-6       {margin-left: (6/12 * 100%)}
+  .sm-offset-col-7       {margin-left: (7/12 * 100%)}
+  .sm-offset-col-8       {margin-left: (8/12 * 100%)}
+  .sm-offset-col-9       {margin-left: (9/12 * 100%)}
+  .sm-offset-col-10      {margin-left: (10/12 * 100%)}
+  .sm-offset-col-11      {margin-left: (11/12 * 100%)}
+  .sm-offset-col-12      {margin-left: (12/12 * 100%)}
+}
+
+@media #{$breakpoint-md} {
+  .md-offset-col-1       {margin-left: (1/12 * 100%)}
+  .md-offset-col-2       {margin-left: (2/12 * 100%)}
+  .md-offset-col-2p5     {margin-left: (2.40/12 * 100%)} // 1/5th
+  .md-offset-col-3       {margin-left: (3/12 * 100%)}
+  .md-offset-col-4       {margin-left: (4/12 * 100%)}
+  .md-offset-col-5       {margin-left: (5/12 * 100%)}
+  .md-offset-col-6       {margin-left: (6/12 * 100%)}
+  .md-offset-col-7       {margin-left: (7/12 * 100%)}
+  .md-offset-col-8       {margin-left: (8/12 * 100%)}
+  .md-offset-col-9       {margin-left: (9/12 * 100%)}
+  .md-offset-col-10      {margin-left: (10/12 * 100%)}
+  .md-offset-col-11      {margin-left: (11/12 * 100%)}
+  .md-offset-col-12      {margin-left: (12/12 * 100%)}
+}
+
+@media #{$breakpoint-lg} {
+  .lg-offset-col-1       {margin-left: (1/12 * 100%)}
+  .lg-offset-col-2       {margin-left: (2/12 * 100%)}
+  .lg-offset-col-2p5     {margin-left: (2.40/12 * 100%)} // 1/5th
+  .lg-offset-col-3       {margin-left: (3/12 * 100%)}
+  .lg-offset-col-4       {margin-left: (4/12 * 100%)}
+  .lg-offset-col-5       {margin-left: (5/12 * 100%)}
+  .lg-offset-col-6       {margin-left: (6/12 * 100%)}
+  .lg-offset-col-7       {margin-left: (7/12 * 100%)}
+  .lg-offset-col-8       {margin-left: (8/12 * 100%)}
+  .lg-offset-col-9       {margin-left: (9/12 * 100%)}
+  .lg-offset-col-10      {margin-left: (10/12 * 100%)}
+  .lg-offset-col-11      {margin-left: (11/12 * 100%)}
+  .lg-offset-col-12      {margin-left: (12/12 * 100%)}
+}
+
+
+@media #{$breakpoint-xl} {
+  .xl-offset-col-1       {margin-left: (1/12 * 100%)}
+  .xl-offset-col-2       {margin-left: (2/12 * 100%)}
+  .xl-offset-col-2p5     {margin-left: (2.40/12 * 100%)} // 1/5th
+  .xl-offset-col-3       {margin-left: (3/12 * 100%)}
+  .xl-offset-col-4       {margin-left: (4/12 * 100%)}
+  .xl-offset-col-5       {margin-left: (5/12 * 100%)}
+  .xl-offset-col-6       {margin-left: (6/12 * 100%)}
+  .xl-offset-col-7       {margin-left: (7/12 * 100%)}
+  .xl-offset-col-8       {margin-left: (8/12 * 100%)}
+  .xl-offset-col-9       {margin-left: (9/12 * 100%)}
+  .xl-offset-col-10      {margin-left: (10/12 * 100%)}
+  .xl-offset-col-11      {margin-left: (11/12 * 100%)}
+  .xl-offset-col-12      {margin-left: (12/12 * 100%)}
+}

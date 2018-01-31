@@ -1,0 +1,36 @@
+// Colours
+
+.black       {color: $black}
+.darkgray    {color: $darkgray}
+.gray        {color: $gray}
+.silver      {color: $silver}
+.white       {color: $white}
+.offwhite    {color: $offwhite}
+.aqua        {color: $aqua}
+.blue        {color: $blue}
+.navy        {color: $navy}
+.teal        {color: $teal}
+.green       {color: $green}
+.olive       {color: $olive}
+.lime        {color: $lime}
+.yellow      {color: $yellow}
+.orange      {color: $orange}
+.red         {color: $red}
+.fuchsia     {color: $fuchsia}
+.purple      {color: $purple}
+.maroon      {color: $maroon}
+
+// Gray Spectrum
+.gray0       {color: lighten($gray, 50)};
+.gray1       {color: lighten($gray, 40)};
+.gray2       {color: lighten($gray, 30)};
+.gray3       {color: lighten($gray, 20)};
+.gray4       {color: lighten($gray, 10)};
+
+.gray5       {color: $gray}
+
+.gray6       {color: darken($gray, 10)};
+.gray7       {color: darken($gray, 20)}
+.gray8       {color: darken($gray, 30)}
+.gray9       {color: darken($gray, 40)}
+.gray10      {color: darken($gray, 50)}

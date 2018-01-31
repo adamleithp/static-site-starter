@@ -1,0 +1,35 @@
+// Visibility
+
+@mixin hide {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+// Renders element, but is hidden
+.hide {
+  @include hide
+}
+.show {
+  display: block !important;
+}
+
+@media #{$breakpoint-xs} {
+  .xs-hide          {@include hide}
+}
+
+@media #{$breakpoint-sm-md} {
+  .sm-hide          {@include hide}
+}
+
+@media #{$breakpoint-md-lg} {
+  .md-hide          {@include hide}
+}
+
+@media #{$breakpoint-lg} {
+  .lg-hide          {@include hide}
+}
+
+.display-none       {display: none}

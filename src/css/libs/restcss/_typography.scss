@@ -1,0 +1,114 @@
+// Typography
+
+$h1: 2.5rem !default;
+$h2: 2rem !default;
+$h3: 1.5rem !default;
+$h4: 1.25rem !default;
+$h5: 1rem !default;
+$h6: .75rem !default;
+
+$letter-spacing: .5 !default;
+$caps-letter-spacing: .06em !default;
+$bold-font-weight: bold !default;
+
+
+// General Text Styling
+.t-bold       {font-weight: $bold-font-weight}
+.t-regualar   {font-weight: normal}
+.t-italic     {font-style: italic}
+.t-caps       {text-transform: uppercase}
+.t-capitalize {text-transform: capitalize}
+.t-lowercase  {text-transform: lowercase;}
+.t-underline  {text-decoration: underline}
+.t-none       {text-decoration: none}
+
+.t-nowrap     {white-space: nowrap}
+.t-break      {word-wrap: break-word}
+
+// Headers
+h1, h2, h3, h4, h5, h6, p {
+  line-height: 1;
+}
+
+h1, .h1 {font-size: $h1}
+h2, .h2 {font-size: $h2}
+h3, .h3 {font-size: $h3}
+h4, .h4 {font-size: $h4}
+h5, .h5 {font-size: $h5}
+h6, .h6 {font-size: $h6}
+
+.truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Text Alignments
+.t-left       {text-align: left}
+.t-center     {text-align: center}
+.t-right      {text-align: right}
+
+@media #{$breakpoint-sm} {
+  .sm-t-center {
+    text-align: center;
+  }
+  .sm-t-left {
+    text-align: left;
+  }
+  .sm-t-right {
+    text-align: right;
+  }
+
+  // Letter spacing
+  .sm-lsn3           {letter-spacing: -.3rem}
+  .sm-lsn2           {letter-spacing: -.2rem}
+  .sm-lsn1           {letter-spacing: -.1rem}
+  .sm-lsnp5          {letter-spacing: -.05rem}
+  .sm-ls0            {letter-spacing: 0rem}
+  .sm-ls1            {letter-spacing: 0.05rem}
+  .sm-ls2            {letter-spacing: .1rem}
+  .sm-ls3            {letter-spacing: .15rem}
+}
+@media #{$breakpoint-md} {
+  .md-t-center {
+    text-align: center;
+  }
+  .md-t-left {
+    text-align: left;
+  }
+  .md-t-right {
+    text-align: right;
+  }
+
+  // Letter spacing
+  .md-lsn3           {letter-spacing: -.3rem}
+  .md-lsn2           {letter-spacing: -.2rem}
+  .md-lsn1           {letter-spacing: -.1rem}
+  .md-lsnp5          {letter-spacing: -.05rem}
+  .md-ls0            {letter-spacing: 0rem}
+  .md-ls1            {letter-spacing: 0.05rem}
+  .md-ls2            {letter-spacing: .1rem}
+  .md-ls3            {letter-spacing: .15rem}
+}
+@media #{$breakpoint-lg} {
+  .lg-t-center {
+    text-align: center;
+  }
+  .lg-t-left {
+    text-align: left;
+  }
+  .lg-t-right {
+    text-align: right;
+  }
+
+  // Letter spacing
+  .lg-lsn3           {letter-spacing: -.3rem}
+  .lg-lsn2           {letter-spacing: -.2rem}
+  .lg-lsn1           {letter-spacing: -.1rem}
+  .lg-lsnp5          {letter-spacing: -.05rem}
+  .lg-ls0            {letter-spacing: 0rem}
+  .lg-ls1            {letter-spacing: 0.05rem}
+  .lg-ls2            {letter-spacing: .1rem}
+  .lg-ls3            {letter-spacing: .15rem}
+}

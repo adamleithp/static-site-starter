@@ -1,0 +1,69 @@
+// Margin Responsive
+
+$margin-step-start: 1;
+$margin-step-limit: 6;
+$margin-step-axix-limit: 6;
+$margin-unit: 6;
+
+
+.mx-auto  {margin-right: auto; margin-left: auto}
+.mxnp5    {margin-right: -.5em; margin-left: -.5em}
+.mxn1     {margin-right: -1em; margin-left: -1em}
+.mxn2     {margin-right: -2em; margin-left: -2em}
+.mxn3     {margin-right: -3em; margin-left: -3em}
+
+
+// Margins
+.m0       {margin: 0}
+.mp5      {margin: .5em}
+@for $i from $margin-step-start through $margin-step-limit {
+  .m#{$i} {margin: #{$i}em}
+}
+
+// Margin-tops
+.mt0       {margin-top: 0}
+.mtp5      {margin-top: .5em}
+@for $i from $margin-step-start through $margin-step-limit {
+  .mt#{$i} {margin-top: #{$i}em}
+  .mtn#{$i} {margin-top: -#{$i}em}
+}
+
+// Margin-rights
+.mr0       {margin-right: 0}
+.mrp5      {margin-right: .5em}
+@for $i from $margin-step-start through $margin-step-limit {
+  .mr#{$i} {margin-right: #{$i}em}
+  .mrn#{$i} {margin-right: -#{$i}em}
+}
+
+// Margin-bottoms
+.mb0       {margin-bottom: 0}
+.mbp5      {margin-bottom: .5em}
+@for $i from $margin-step-start through $margin-step-limit {
+  .mb#{$i} {margin-bottom: #{$i}em}
+  .mbn#{$i} {margin-bottom: -#{$i}em}
+}
+
+
+// Margin-lefts
+.ml0       {margin-left: 0}
+.mlp5      {margin-left: .5em}
+@for $i from $margin-step-start through $margin-step-limit {
+  .ml#{$i} {margin-left: #{$i}em}
+  .mln#{$i} {margin-left: -#{$i}em}
+}
+
+
+// Margin Axis X
+.mx0       {margin-right: 0; margin-left: 0}
+.mxp5      {margin-right: .5em; margin-left: .5em}
+@for $i from $margin-step-start through $margin-step-axix-limit {
+  .mx#{$i} {margin-right: #{$i}em; margin-left: #{$i}em;}
+}
+
+// Margin Axis Y
+.my0       {margin-top: 0; margin-bottom: 0}
+.myp5      {margin-top: .5em; margin-bottom: .5em}
+@for $i from $margin-step-start through $margin-step-axix-limit {
+  .my#{$i} {margin-top: #{$i}em; margin-bottom: #{$i}em;}
+}

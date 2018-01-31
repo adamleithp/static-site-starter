@@ -1,0 +1,45 @@
+// Layouts
+
+// Clearfix
+.clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table
+  }
+  &:after {clear: both}
+}
+
+// Display
+.inline           {display: inline}
+.block            {display: block}
+.inline-block     {display: inline-block}
+.table            {display: table}
+.table-cell       {display: table-cell}
+
+// Vertical Align
+.align-bottom     {vertical-align: bottom}
+.align-middle     {vertical-align: middle}
+.align-sub        {vertical-align: sub}
+.align-super      {vertical-align: super}
+.align-top        {vertical-align: top}
+
+// Overflows
+.overflow-hidden  {overflow: hidden}
+.overflow-auto    {overflow: auto}
+
+// Floats
+.left             {float:left}
+.right            {float:right}
+
+@media #{$breakpoint-sm} {
+  .sm-right       {float: right}
+  .sm-left        {float: left}
+}
+@media #{$breakpoint-md} {
+  .md-right       {float: right}
+  .md-left        {float: left}
+}
+@media #{$breakpoint-lg} {
+  .lg-right       {float: right}
+  .lg-left        {float: left}
+}

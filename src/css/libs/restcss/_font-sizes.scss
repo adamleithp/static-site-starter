@@ -1,0 +1,81 @@
+// Font Sizes
+
+.fs4            {font-size: .4em !important}
+.fs5            {font-size: .5em !important}
+.fs6            {font-size: .6em !important}
+.fs7            {font-size: .7em !important}
+.fs8            {font-size: .8em !important}
+.fs9            {font-size: .9em !important}
+.fs10           {font-size: 1em !important}
+.fs11           {font-size: 1.1em !important}
+.fs12           {font-size: 1.2em !important}
+.fs13           {font-size: 1.3em !important}
+.fs14           {font-size: 1.4em !important}
+.fs15           {font-size: 1.5em !important}
+.fs16           {font-size: 1.6em !important}
+.fs17           {font-size: 1.7em !important}
+.fs18           {font-size: 1.8em !important}
+.fs19           {font-size: 1.9em !important}
+.fs20           {font-size: 2em !important}
+
+
+@media #{$breakpoint-sm} {
+  .sm-fs4       {font-size: .4em !important}
+  .sm-fs5       {font-size: .5em !important}
+  .sm-fs6       {font-size: .6em !important}
+  .sm-fs7       {font-size: .7em !important}
+  .sm-fs8       {font-size: .8em !important}
+  .sm-fs9       {font-size: .9em !important}
+  .sm-fs10      {font-size: 1em !important}
+  .sm-fs11      {font-size: 1.1em !important}
+  .sm-fs12      {font-size: 1.2em !important}
+  .sm-fs13      {font-size: 1.3em !important}
+  .sm-fs14      {font-size: 1.4em !important}
+  .sm-fs15      {font-size: 1.5em !important}
+  .sm-fs16      {font-size: 1.6em !important}
+  .sm-fs17      {font-size: 1.7em !important}
+  .sm-fs18      {font-size: 1.8em !important}
+  .sm-fs19      {font-size: 1.9em !important}
+  .sm-fs20      {font-size: 2em !important}
+}
+
+@media #{$breakpoint-md} {
+  .md-fs4       {font-size: .4em !important}
+  .md-fs5       {font-size: .5em !important}
+  .md-fs6       {font-size: .6em !important}
+  .md-fs7       {font-size: .7em !important}
+  .md-fs8       {font-size: .8em !important}
+  .md-fs9       {font-size: .9em !important}
+  .md-fs10      {font-size: 1em !important}
+  .md-fs11      {font-size: 1.1em !important}
+  .md-fs12      {font-size: 1.2em !important}
+  .md-fs13      {font-size: 1.3em !important}
+  .md-fs14      {font-size: 1.4em !important}
+  .md-fs15      {font-size: 1.5em !important}
+  .md-fs16      {font-size: 1.6em !important}
+  .md-fs17      {font-size: 1.7em !important}
+  .md-fs18      {font-size: 1.8em !important}
+  .md-fs19      {font-size: 1.9em !important}
+  .md-fs20      {font-size: 2em !important}
+}
+
+
+@media #{$breakpoint-lg} {
+  .lg-fs4       {font-size: .4em !important}
+  .lg-fs5       {font-size: .5em !important}
+  .lg-fs6       {font-size: .6em !important}
+  .lg-fs7       {font-size: .7em !important}
+  .lg-fs8       {font-size: .8em !important}
+  .lg-fs9       {font-size: .9em !important}
+  .lg-fs10      {font-size: 1em !important}
+  .lg-fs11      {font-size: 1.1em !important}
+  .lg-fs12      {font-size: 1.2em !important}
+  .lg-fs13      {font-size: 1.3em !important}
+  .lg-fs14      {font-size: 1.4em !important}
+  .lg-fs15      {font-size: 1.5em !important}
+  .lg-fs16      {font-size: 1.6em !important}
+  .lg-fs17      {font-size: 1.7em !important}
+  .lg-fs18      {font-size: 1.8em !important}
+  .lg-fs19      {font-size: 1.9em !important}
+  .lg-fs20      {font-size: 2em !important}
+}

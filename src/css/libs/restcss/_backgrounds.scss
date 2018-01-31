@@ -1,0 +1,36 @@
+// Backgroun colours
+
+.bg-black       {background-color: $black}
+.bg-darkgray    {background-color: $darkgray}
+.bg-gray        {background-color: $gray}
+.bg-silver      {background-color: $silver}
+.bg-white       {background-color: $white}
+.bg-offwhite    {background-color: $offwhite}
+.bg-aqua        {background-color: $aqua}
+.bg-blue        {background-color: $blue}
+.bg-navy        {background-color: $navy}
+.bg-teal        {background-color: $teal}
+.bg-green       {background-color: $green}
+.bg-olive       {background-color: $olive}
+.bg-lime        {background-color: $lime}
+.bg-yellow      {background-color: $yellow}
+.bg-orange      {background-color: $orange}
+.bg-red         {background-color: $red}
+.bg-fuchsia     {background-color: $fuchsia}
+.bg-purple      {background-color: $purple}
+.bg-maroon      {background-color: $maroon}
+
+// Gray Spectrum
+.bg-gray0       {background-color: lighten($gray, 50)}
+.bg-gray1       {background-color: lighten($gray, 40)}
+.bg-gray2       {background-color: lighten($gray, 30)}
+.bg-gray3       {background-color: lighten($gray, 20)}
+.bg-gray4       {background-color: lighten($gray, 10)}
+
+.bg-gray5       {background-color: $gray}
+
+.bg-gray6       {background-color: darken($gray, 10)}
+.bg-gray7       {background-color: darken($gray, 20)}
+.bg-gray8       {background-color: darken($gray, 30)}
+.bg-gray9       {background-color: darken($gray, 40)}
+.bg-gray10      {background-color: darken($gray, 50)}
