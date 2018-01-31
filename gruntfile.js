@@ -92,6 +92,10 @@ module.exports = function(grunt) {
 
 
     watch: {
+      options: {
+        event: ['changed', 'added', 'deleted']
+      },
+
       html: {
         files: [
           'src/html/**/*.njk',
@@ -147,7 +151,6 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
-    'browserSync',
     'clean:html',
     'clean:js',
     'clean:css',
@@ -155,6 +158,7 @@ module.exports = function(grunt) {
     'sass:dist',
     'browserify:dist',
     'copy:dist',
+    'browserSync',
     'watch',
   ]);
 

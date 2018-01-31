@@ -1,1 +1,15 @@
 @import "./libs/variables";
+
+body {
+  background: url('/images/binary-bg.jpg');
+  background-repeat: repeat;
+  background-color: #000;
+  color: #fff;
+}
+
+#content {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
