@@ -1408,4 +1408,16 @@ a {
   a:active {
     color: inherit; }
 
+body {
+  background: url("/images/binary-bg.jpg");
+  background-repeat: repeat;
+  background-color: #000;
+  color: #fff; }
+
+#content {
+  height: calc( 100vh - 16px);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /*# sourceMappingURL=global.css.map */

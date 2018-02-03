@@ -1,4 +1,5 @@
 {
   "name" : "base",
-  "site" : "<siteName>"
+  "site" : "<siteName>",
+  "misc" : "this is JSON from data.json"
 }

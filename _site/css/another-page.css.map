@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "another-page.css",
+	"sources": [
+		"../../src/css/another-page.scss",
+		"../../src/css/libs/_variables.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,IAAI,CAAC;EACH,KAAK,EAAE,MAAM,GACd"
+}
