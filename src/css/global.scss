@@ -29,9 +29,6 @@ $gray:      #888 !default;
 $black:     #2b2b2b !default;
 
 
-@import "./libs/variables";
-
-// Reset and Functions
 @import "./libs/reset";
 @import "./libs/functions";
 
@@ -44,9 +41,22 @@ $black:     #2b2b2b !default;
 @import "./libs/restcss/grid";
 @import "./libs/restcss/layout";
 @import "./libs/restcss/flexbox";
+@import "./libs/restcss/position";
 @import "./libs/restcss/margins";
+@import "./libs/restcss/margins-responsive";
 @import "./libs/restcss/paddings";
+@import "./libs/restcss/paddings-responsive";
 
+// Aesthetics
+@import "./libs/restcss/backgrounds";
+@import "./libs/restcss/colors";
+@import "./libs/restcss/border";
+@import "./libs/restcss/border-colors";
+@import "./libs/restcss/visibility";
+@import "./libs/restcss/opacity";
+
+// Components
+@import "./libs/restcss/forms";
 @import "./libs/restcss/btn";
 
 
@@ -57,6 +67,7 @@ body {
   color: #222;
   overflow-x: hidden;
   width: 100%;
+  background: red;
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
@@ -84,14 +95,6 @@ a {
   }
 }
 
-
-
-body {
-  background: url('/images/binary-bg.jpg');
-  background-repeat: repeat;
-  background-color: #000;
-  color: #fff;
-}
 
 #content {
   height: calc( 100vh - 16px );

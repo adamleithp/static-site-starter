@@ -5,8 +5,9 @@
   "main": "gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "grunt && node server.js",
-    "deploy": "grunt deploy"
+    "dev": "grunt --verbose && node server.js",
+    "deploy": "grunt deploy --verbose",
+    "td": "grunt test_deploy --verbose && node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,11 +21,15 @@
     "grunt-browserify": "^5.2.0",
     "grunt-contrib-clean": "^1.1.0",
     "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-htmlmin": "^2.4.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-gh-pages": "^2.0.0",
     "grunt-nunjucks-2-html": "^2.1.0",
+    "grunt-purifycss": "^0.1.2",
     "grunt-sass": "^2.0.0",
-    "load-grunt-tasks": "^3.5.2"
+    "load-grunt-tasks": "^3.5.2",
+    "uglifyify": "^4.0.5"
   },
   "dependencies": {
     "cookies-js": "^1.2.3"

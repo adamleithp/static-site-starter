@@ -10,6 +10,10 @@ module.exports = function(grunt) {
       css: {
         src: '_site/css/'
       },
+
+      temp_folder: {
+        src: '_site/css/__temp__'
+      },
     },
 
 
@@ -63,11 +67,34 @@ module.exports = function(grunt) {
         sourceMap: true
       },
       dist: {
+        options: {
+          style: 'expanded'
+        },
         files: [{
           expand: true,
           cwd: "src/css/",
           src: "*.scss",
           dest: "_site/css",
+          ext: '.css'
+        }]
+      },
+
+      deploy: {
+        files: [{
+          expand: true,
+          cwd: "src/css/",
+          src: ["*.scss", "!global.scss"],
+          dest: "_site/css",
+          ext: '.css'
+        }]
+      },
+
+      deploy_global_file_only: {
+        files: [{
+          expand: true,
+          cwd: "src/css/",
+          src: ["global.scss"],
+          dest: "_site/css/__temp__", // make temp folder, will delete.
           ext: '.css'
         }]
       }
@@ -86,6 +113,62 @@ module.exports = function(grunt) {
             '**/*.js',
           ],
           dest: '_site/js/',
+        }]
+      },
+      deploy: {
+        files: [{
+          expand: true,
+          cwd: 'src/js/',
+          src: [
+            '**/*.js',
+          ],
+          dest: '_site/js/',
+        }],
+        options: {
+          transform: [
+            ['babelify', { presets: "es2015" }],
+            'uglifyify',
+          ],
+          browserifyOptions: {
+              debug: true,
+          }
+        },
+      }
+    },
+
+
+    htmlmin: {
+      deploy: {
+        options: {                                 // Target options
+          removeComments: true,
+          collapseWhitespace: true
+        },                                    // Another target
+        files: [{
+          expand: true,
+          cwd: '_site',
+          src: ['*.html'],
+          dest: '_site'
+        }]
+      }
+    },
+
+
+    purifycss: {
+      target: {
+        src: ['_site/**/*.html', '_site/js/**/*.js'],
+        css: ['_site/css/__temp__/global.css'], // take from temp folder made from sass_deploy_global
+        dest: '_site/css/global.css', // place back in expected folder.
+      },
+    },
+
+
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: '_site/css',
+          src: ['*.css'],
+          dest: '_site/css'
         }]
       }
     },
@@ -106,14 +189,14 @@ module.exports = function(grunt) {
         ],
       },
 
-      css: {
+      sass: {
         files: [
           'src/css/*.scss',
           'src/css/*.css',
         ],
         tasks: [
           'clean:css',
-          'sass',
+          'sass:dist',
         ],
       },
 
@@ -124,7 +207,7 @@ module.exports = function(grunt) {
         tasks: [
           'clean:js',
           'browserify:dist'
-        ]
+        ],
       },
 
       images: {
@@ -133,7 +216,7 @@ module.exports = function(grunt) {
         ],
         tasks: [
           'copy:dist'
-        ]
+        ],
       }
     },
 
@@ -166,10 +249,16 @@ module.exports = function(grunt) {
     'clean:html',
     'clean:js',
     'clean:css',
+    'clean:temp_folder',
     'nunjucks',
-    'sass:dist',
-    'browserify:dist',
+    'sass:deploy',
+    'sass:deploy_global_file_only',
+    'purifycss',
+    'clean:temp_folder',
+    'browserify:deploy',
     'copy:dist',
+    'htmlmin:deploy',
+    'cssmin',
     'gh-pages'
   ]);
 }
