@@ -66,6 +66,8 @@ module.exports = function(grunt) {
       options: {
         sourceMap: true
       },
+
+      // All CSS, used for development only
       dist: {
         options: {
           style: 'expanded'
@@ -79,6 +81,7 @@ module.exports = function(grunt) {
         }]
       },
 
+      // Production - Not global 
       deploy: {
         files: [{
           expand: true,
@@ -89,12 +92,13 @@ module.exports = function(grunt) {
         }]
       },
 
+      // Production - Create temporary folder for purifyCss (will be removed)
       deploy_global_file_only: {
         files: [{
           expand: true,
           cwd: "src/css/",
           src: ["global.scss"],
-          dest: "_site/css/__temp__", // make temp folder, will delete.
+          dest: "_site/css/__temp__", // temporary folder
           ext: '.css'
         }]
       }
@@ -156,8 +160,8 @@ module.exports = function(grunt) {
     purifycss: {
       target: {
         src: ['_site/**/*.html', '_site/js/**/*.js'],
-        css: ['_site/css/__temp__/global.css'], // take from temp folder made from sass_deploy_global
-        dest: '_site/css/global.css', // place back in expected folder.
+        css: ['_site/css/__temp__/global.css'], // take from temp folder made from deploy_global_file_only
+        dest: '_site/css/global.css', // place back in expected folder folder.
       },
     },
 
@@ -246,19 +250,27 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('deploy', [
+    // Clean
     'clean:html',
     'clean:js',
     'clean:css',
     'clean:temp_folder',
+    // HTML
     'nunjucks',
+    // CSS + Purify CSS routine
     'sass:deploy',
     'sass:deploy_global_file_only',
     'purifycss',
     'clean:temp_folder',
+    // JS + Minification
     'browserify:deploy',
+    // Copy
     'copy:dist',
+    // HTML + Minification
     'htmlmin:deploy',
+    // CSS + Minification
     'cssmin',
+    // Deploy to Github.
     'gh-pages'
   ]);
 }
